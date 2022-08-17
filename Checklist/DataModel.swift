@@ -14,6 +14,13 @@ class DataModel {
         handleFirstTime()
     }
     
+    class func nextChecklistItemID() -> Int {
+        let userDefaults = UserDefaults.standard
+        let itemID = userDefaults.integer(forKey: "ChecklistItemID")
+        userDefaults.set(itemID + 1, forKey: "ChecklistItemID")
+        return itemID
+    }
+    
     func handleFirstTime() {
         let userDefault = UserDefaults.standard
         let firstTime = userDefault.bool(forKey: "FirstTime")
@@ -26,6 +33,8 @@ class DataModel {
             userDefault.set(false, forKey: "FirstTime")
         }
     }
+    
+    
     
     //default for userdefault
     func registerDefault() {

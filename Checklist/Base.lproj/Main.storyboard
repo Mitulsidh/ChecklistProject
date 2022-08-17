@@ -192,6 +192,85 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="xeS-fH-ywQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XIJ-bo-NWu">
+                                        <rect key="frame" x="0.0" y="97.5" width="375" height="39.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XIJ-bo-NWu" id="875-EY-gf9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vgc-bB-hDR">
+                                                    <rect key="frame" x="16" y="4" width="327" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="zxV-ct-Evd" id="nge-n9-nh6"/>
+                                                    </connections>
+                                                </textField>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AAo-5D-zzo">
+                                                    <rect key="frame" x="310" y="4" width="51" height="31.5"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remind Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-qG-2Iw">
+                                                    <rect key="frame" x="26" y="9" width="86" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="AAo-5D-zzo" secondAttribute="trailing" constant="16" id="Igt-jx-Z7Y"/>
+                                                <constraint firstItem="AAo-5D-zzo" firstAttribute="top" secondItem="875-EY-gf9" secondAttribute="top" constant="4" id="Ohh-i0-4sH"/>
+                                                <constraint firstAttribute="bottom" secondItem="AAo-5D-zzo" secondAttribute="bottom" constant="4" id="nor-ld-QQW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="w27-GI-MvC">
+                                        <rect key="frame" x="0.0" y="137" width="375" height="52.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w27-GI-MvC" id="m0k-up-hyT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UOX-mL-YPY">
+                                                    <rect key="frame" x="16" y="4" width="327" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="zxV-ct-Evd" id="Y1f-0e-MqB"/>
+                                                    </connections>
+                                                </textField>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-rE-VEK">
+                                                    <rect key="frame" x="129" y="4" width="230" height="44.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="230" id="8YK-0x-Vna"/>
+                                                        <constraint firstAttribute="height" constant="44" id="ALb-Sl-psW"/>
+                                                    </constraints>
+                                                </datePicker>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-qg-2vB">
+                                                    <rect key="frame" x="24" y="16" width="71" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="bwg-rE-VEK" secondAttribute="bottom" constant="4" id="3i0-RX-mbP"/>
+                                                <constraint firstAttribute="bottom" secondItem="bwg-rE-VEK" secondAttribute="bottom" constant="4" id="8fs-T8-Tha"/>
+                                                <constraint firstItem="bwg-rE-VEK" firstAttribute="top" secondItem="m0k-up-hyT" secondAttribute="top" constant="4" id="Zq4-t0-Udd"/>
+                                                <constraint firstItem="bwg-rE-VEK" firstAttribute="top" secondItem="m0k-up-hyT" secondAttribute="top" constant="4" id="mem-81-MQN"/>
+                                                <constraint firstAttribute="trailing" secondItem="bwg-rE-VEK" secondAttribute="trailing" constant="16" id="pbc-vy-VkM"/>
+                                                <constraint firstAttribute="trailing" secondItem="bwg-rE-VEK" secondAttribute="trailing" constant="16" id="vef-G3-cBE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="zxV-ct-Evd" id="AK2-4g-yjg"/>
@@ -211,7 +290,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="datePicker" destination="bwg-rE-VEK" id="a2z-rh-QR1"/>
                         <outlet property="doneBarButton" destination="rQd-XY-IBq" id="Ihd-UO-9Sa"/>
+                        <outlet property="shouldRemindSwitch" destination="AAo-5D-zzo" id="0a0-sC-eD2"/>
                         <outlet property="textField" destination="4k3-05-HA9" id="pN3-xj-Yvq"/>
                     </connections>
                 </tableViewController>

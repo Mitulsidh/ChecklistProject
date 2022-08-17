@@ -164,7 +164,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     func configureText(for  cell: UITableViewCell, with item: ChecklistItem) {
         let label = cell.viewWithTag(1000) as! UILabel
-        label.text = item.text
+        label.text = "\(item.text)"
     }
 //
 //    // Save data in plist file method
